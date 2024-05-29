@@ -6,7 +6,7 @@ from multiprocessing import Pool, cpu_count, Manager
 from tqdm import tqdm
 
 # Assuming self_prompter.py is properly set up for multiprocessing
-from self_prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, OPENAI_API_KEY, clean_system_message
+from prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, OPENAI_API_KEY, clean_system_message
 
 def process_row_compare(data):
     try:
@@ -50,9 +50,9 @@ def update_progress(result, results):
 
 if __name__ == "__main__":
     # Load the dataset
-    compare = 'M2P_distort_base_gpt3.5_gpt3.5'
+    compare = 'HMAW_base_gpt3.5_gpt3.5'
     dataset = 'Education'
-    df1 = pd.read_json(f'./log2/response_{dataset}_M2P_distort_gpt3.5.json')
+    df1 = pd.read_json(f'./log2/response_{dataset}_HMAW_gpt3.5.json')
     df2 = pd.read_json(f'./log2/response_{dataset}_base_gpt3.5.json')
     
     # Prepare data for multiprocessing

@@ -6,7 +6,7 @@ from multiprocessing import Pool, cpu_count, Manager
 from tqdm import tqdm
 
 # Assuming self_prompter.py is properly set up for multiprocessing
-from self_prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, get_expert_output, get_SSP_output, get_onMP_output, OPENAI_API_KEY, clean_system_message
+from prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, get_expert_output, get_SSP_output, get_onMP_output, OPENAI_API_KEY, clean_system_message
 
 def process_row_APE(data, llms_name):
     try:
@@ -286,7 +286,7 @@ def update_progress(result, results):
 
 if __name__ == "__main__":
     # Load the dataset
-    df = pd.read_json('./data/general_dataset.json')
+    df = pd.read_json('./data/ATLAS/general_dataset.json')
     
     # Prepare data for multiprocessing
     data_split = [(index, row) for index, row in df.iterrows()]
