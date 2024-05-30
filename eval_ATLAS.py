@@ -5,7 +5,6 @@ import os
 from multiprocessing import Pool, cpu_count, Manager
 from tqdm import tqdm
 
-# Assuming self_prompter.py is properly set up for multiprocessing
 from prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, get_expert_output, get_SSP_output, get_onMP_output, OPENAI_API_KEY, clean_system_message
 
 def process_row_APE(data, llms_name):

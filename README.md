@@ -33,8 +33,6 @@ pip install -r requirements.txt
 For installing and running the Mixtral model using vLLM, refer to the official [vLLM documentation](https://docs.vllm.ai/en/stable/).
 
 
-
-
 ---
 
 ## Directory Structure Preparation
@@ -82,6 +80,8 @@ By maintaining this structure, you ensure that the scripts can locate and proces
 
 ## How to Run
 
+#### Generate Responses
+
 To execute prompt optimization and response generation, use the following command:
 
 ```bash
@@ -89,6 +89,28 @@ python eval_{dataset}.py
 ```
 
 Replace `{dataset}` with one of the following options to represent different datasets: `ATLAS`, `education`, `fed`, `codenet`, or `GSM`.
+
+#### Test
+
+Testing on `ATLAS`, `education`, `fed`, and `codenet`:
+
+Run the following command:
+
+```bash
+python eval_compare.py
+```
+
+Please ensure to update the related file names in `eval_compare.py` to test under various settings.
+
+Testing on `GSM`： 
+
+Run the following command:
+
+```bash
+python eval_correctness.py
+```
+
+
 
 #### Customizing Prompting Methods
 

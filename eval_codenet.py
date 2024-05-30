@@ -5,8 +5,7 @@ import os
 from multiprocessing import Pool, cpu_count, Manager
 from tqdm import tqdm
 
-# Assuming self_prompter.py is properly set up for multiprocessing
-from self_prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, get_expert_output, get_SSP_output, get_onMP_output, OPENAI_API_KEY, clean_system_message
+from prompter import llmAgent, Evaluator, get_self_prompt_output, get_m2prompting_output, get_expert_output, get_SSP_output, get_onMP_output, OPENAI_API_KEY, clean_system_message
 
 def process_row_APE(data, llms_name):
     try:
@@ -295,7 +294,7 @@ if __name__ == "__main__":
     data_split = []
 
     # Open the JSONL file
-    with open('./data/code_readability/codenet-python-train.jsonl', 'r') as f:
+    with open('./data/CodeNet/codenet-python-train.jsonl', 'r') as f:
         for i, line in enumerate(f):
             data_split.append((i, json.loads(line)))
     
