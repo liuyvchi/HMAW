@@ -68,8 +68,6 @@ To utilize the provided scripts effectively, please organize your data according
 - `response_Education_HMAW_mixtral.json`: Contains responses generated using the HMAW method with the `mixtral` model as the agent.
 
 #### Note
-
-- The structure includes multiple domains (e.g., Education, FED, GSM8K, ATLAS, CodeNet) within the `data` directory.
 - The `log` directory contains detailed comparison and response logs for various models and methods.
 - The root directory includes essential evaluation scripts (`eval_ATLAS.py`, `eval_compare.py`, `eval_correctness.py`, etc.).
 
