@@ -1,6 +1,6 @@
 # HMAW: Hierarchical Multi-Agent Workflow for Prompt Optimization
 
-This repository contains the implementation of the Hierarchical Multi-Agent Workflow (HMAW) for prompt optimization in large language models (LLMs). HMAW addresses the limitations of traditional prompt design strategies by allowing LLMs the freedom to construct the best prompts autonomously.
+This repository contains the implementation of the Hierarchical Multi-Agent Workflow (HMAW) for prompt optimization in large language models (LLMs).
 
 ![Figure 1](./workflow.png)
 
