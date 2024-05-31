@@ -120,7 +120,14 @@ For details on how to change the prompting methods used in response generation, 
 If you find our code helpful, please consider citing our paper:
 
 ```bibtex
-
+@misc{liu2024hierarchical,
+      title={Towards Hierarchical Multi-Agent Workflows for Zero-Shot Prompt Optimization}, 
+      author={Yuchi Liu and Jaskirat Singh and Gaowen Liu and Ali Payani and Liang Zheng},
+      year={2024},
+      eprint={2405.20252},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
 ## License
