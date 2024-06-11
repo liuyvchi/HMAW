@@ -78,7 +78,7 @@ By maintaining this structure, you ensure that the scripts can locate and proces
 
 ## How to Run
 
-#### Generate Responses
+#### :wrench: Generate Responses
 
 To execute prompt optimization and response generation, use the following command:
 
@@ -88,7 +88,7 @@ python eval_{dataset}.py
 
 Replace `{dataset}` with one of the following options to represent different datasets: `ATLAS`, `education`, `fed`, `codenet`, or `GSM`.
 
-#### Test
+#### :wrench: Test
 
 Testing on `ATLAS`, `education`, `fed`, and `codenet`:
 
