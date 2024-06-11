@@ -1,5 +1,10 @@
 # HMAW: Hierarchical Multi-Agent Workflow for Prompt Optimization
 
+ [Yuchi Liu](https://liuyvchi.github.io/), [Jaskirat Singh](https://1jsingh.github.io/), [Wen Gao](), [Ali Payani](), [Liang Zheng](https://zheng-lab.cecs.anu.edu.au)
+
+<a href="https://arxiv.org/pdf/2405.20252"><img src="https://img.shields.io/badge/Paper-arXiv-red?style=for-the-badge" height=22.5></a>
+
+
 This repository contains the implementation of the Hierarchical Multi-Agent Workflow (HMAW) for prompt optimization in large language models (LLMs).
 
 ![Figure 1](./workflow.png)
