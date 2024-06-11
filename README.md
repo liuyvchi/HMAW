@@ -28,7 +28,7 @@ To install the required packages, execute the following command:
 pip install -r requirements.txt
 ```
 
-#### vLLM Model Installation
+#### :wrench: vLLM Model Installation
 
 For installing and running the Mixtral model using vLLM, refer to the official [vLLM documentation](https://docs.vllm.ai/en/stable/).
 
