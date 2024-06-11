@@ -20,7 +20,7 @@ Before running the scripts, ensure you have Python installed along with the nece
 - setuptools==68.2.2
 - tqdm==4.66.1
 
-#### Installation
+#### :wrench: Installation
 
 To install the required packages, execute the following command:
 
